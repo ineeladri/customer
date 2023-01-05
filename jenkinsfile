@@ -1,8 +1,7 @@
-```
 node {
       stage("Git Clone"){
 
-        git branch: 'main', url: 'https://github.com/jsilaparasetti/claims.git'
+        git branch: 'main', url: ''
     }
    
     stage("Docker build"){
@@ -17,4 +16,4 @@ withCredentials([[$class: 'UsernamePasswordMultiBinding', credentialsId: 'test',
 	   sh 'docker push apurva09/claims_image:latest'
     }
 }
-```
+
