@@ -28,4 +28,4 @@ sh 'docker rm -f customer||true'
 sh 'docker run -p 9002:9002 -d --name customer customer:latest'
 }
 }
-}
+
